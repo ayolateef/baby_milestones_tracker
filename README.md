@@ -1,16 +1,30 @@
 # baby_milestones_tracker
 
-A new Flutter project.
+The Milestone Tracker App is designed to help mothers add, view, and edit milestones for their babies. 
+It provides a user-friendly interface for tracking important events such as a baby's first smile or first step.
+The app utilizes Flutter for the frontend and implements state management to ensure data persistence between app sessions.
 
-## Getting Started
+## Key Features
 
-This project is a starting point for a Flutter application.
+- **Onboarding Screen:** Welcomes users to the app and provides initial setup instructions.
+- **Dashboard Screen:** Allows mothers to add, view, and edit milestones with details such as date, milestone type, and additional notes.
+- **State Management:** Utilizes the Provider to manage the app's state and persist milestone data.
 
-A few resources to get you started if this is your first Flutter project:
+## App Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```plaintext
+milestone_tracker/
+|-- lib/
+|   |-- core/
+|   |-- features/
+|   |-- root/
+|   |  |-- model
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+|   |-- widgets/
+|   |   |-- milestone_screen.dart
+|   |   |-- onboarding_screen.dart
+|   |   |-- dashboard_screen.dart
+|   |-- routes.dart
+|   |-- main.dart
+|-- pubspec.yaml
+|-- README.md
